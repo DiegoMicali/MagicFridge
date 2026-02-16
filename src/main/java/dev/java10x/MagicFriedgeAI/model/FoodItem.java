@@ -19,9 +19,13 @@ public class FoodItem {
 
     private String nome;
 
-    private enum categoria {carnes, laticinios, vegetais, frutas, liquidos, bebidas};
-
+    @Enumerated(EnumType.STRING)
+    private Categoria categoria;
     private int quantidade;
 
     private LocalDate validade;
+
+    public enum Categoria {
+        CARNES, LATICINIOS, VEGETAIS, FRUTAS, LIQUIDOS, BEBIDAS
+    }
 }

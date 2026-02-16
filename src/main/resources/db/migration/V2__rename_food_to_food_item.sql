@@ -1,0 +1,1 @@
+ALTER  TABLE food RENAME to food_item;
