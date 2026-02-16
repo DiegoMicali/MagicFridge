@@ -17,15 +17,16 @@ public class FoodItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
+    private String name;
 
     @Enumerated(EnumType.STRING)
-    private Categoria categoria;
-    private int quantidade;
+    private Category category;
 
-    private LocalDate validade;
+    private int amout;
 
-    public enum Categoria {
-        CARNES, LATICINIOS, VEGETAIS, FRUTAS, LIQUIDOS, BEBIDAS
+    private LocalDate validity;
+
+    public enum Category {
+        MEATS, DAIRY, VEGETABLES, FRUITS, LIQUIDS, BEVERAGES
     }
 }
