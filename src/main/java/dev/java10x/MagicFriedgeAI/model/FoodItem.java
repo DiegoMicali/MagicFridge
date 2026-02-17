@@ -1,5 +1,6 @@
 package dev.java10x.MagicFriedgeAI.model;
 
+import dev.java10x.MagicFriedgeAI.enums.Category;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,14 +20,10 @@ public class FoodItem {
 
     private String name;
 
-    @Enumerated(EnumType.STRING)
     private Category category;
 
     private int amout;
 
     private LocalDate validity;
 
-    public enum Category {
-        MEATS, DAIRY, VEGETABLES, FRUITS, LIQUIDS, BEVERAGES
-    }
 }
