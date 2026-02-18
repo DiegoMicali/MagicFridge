@@ -4,6 +4,7 @@ import dev.java10x.MagicFriedgeAI.repository.FoodItemRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,8 +16,8 @@ import java.util.Optional;
 @Data
 public class FoodItemService {
 
+    @Autowired
     private FoodItemRepository repository;
-
 
     // List all foods
     public List<FoodItem> listAll() {

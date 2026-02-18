@@ -22,7 +22,7 @@ public class FoodItemController {
     }
 
     //POST
-    @PostMapping
+    @PostMapping("/savenew")
     public ResponseEntity<FoodItem> salvar(@RequestBody FoodItem foodItem) {
         FoodItem salvo = service.save(foodItem);
         return ResponseEntity.ok(salvo);
