@@ -22,7 +22,7 @@ public class FoodItem {
 
     private Category category;
 
-    private int amout;
+    private int amount;
 
     private LocalDate validity;
 
